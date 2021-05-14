@@ -9,7 +9,13 @@ public class Boss extends GameEntity{
     public Boss(int health, int damage, Weapon bossWeapon) {
         super(health, damage);
         this.bossWeapon = bossWeapon;
+
     }
+
+    /*public String printInfo(){
+
+        return Boss();
+    }*/
 
     public Weapon getBossWeapon() {
         return bossWeapon;
@@ -18,5 +24,7 @@ public class Boss extends GameEntity{
     public void setBossWeapon(Weapon bossWeapon) {
         this.bossWeapon = bossWeapon;
     }
+
+
 
 }
