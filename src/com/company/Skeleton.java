@@ -1,17 +1,23 @@
 package com.company;
 
+import java.util.Random;
+
 public class Skeleton extends Boss{
 
-    private int countArrows= 10;
+    private int countArrows;
+
 
     public int getCountArrows() {
 
-        //countArrows = 10;
+        for(int i = 1; i < 11; i++){
+        Random random = new Random();
+        countArrows = random.nextInt(i);}
+
         return countArrows;
     }
 
     @Override
     public String printInfo() {
-        return super.printInfo() + " " + countArrows;
+        return super.printInfo() + " " + getCountArrows();
     }
 }
